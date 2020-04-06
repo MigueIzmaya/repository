@@ -5,6 +5,14 @@ spring:
       host: localhost
       port: 27017
       
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 1000
+      
 controller:
   uri: /api/v1/bancos/estado/{state}
   
@@ -20,4 +28,7 @@ validator:
   countrymessage: "'countryCode' header is missing or empty"
   channelidmessage: "'ChannelId' header is missing or empty"
   businesscodemessage: "'businessCode' header is missing or empty"
-  
+  errormessage: ERROR
+  badrequestmessage: "Bad Request: "
+  resourcenotfound: Resource not found
+  nobanksmessage: There are no banks
