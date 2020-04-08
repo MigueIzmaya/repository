@@ -18,8 +18,8 @@ controller:
   
 fallbackProp:
   base: 'http://localhost:9090'
-  uri: '/api/v1/bancos/estado/{state}'
-  param: 'state'
+  uri: '/api/v1/bancos/estado/{estado}'
+  param: 'estado'
 
   
 validator:
