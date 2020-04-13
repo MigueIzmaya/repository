@@ -36,3 +36,7 @@ validator:
   badrequestmessage: "Bad Request: "
   resourcenotfound: Resource not found
   nobanksmessage: There are no banks
+  
+logging:
+  level:
+    ROOT: INFO
