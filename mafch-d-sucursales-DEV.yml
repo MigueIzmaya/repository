@@ -5,7 +5,7 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 1000
-      
+            
 controller:
   uri: /api/v1/sucursales/retrieve
   
